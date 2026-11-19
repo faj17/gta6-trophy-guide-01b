@@ -1,5 +1,9 @@
 # VICE TRACKER — GTA VI Trophy Guide & Platinum Roadmap
 
+[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/faj17/gta6-trophy-guide-01b/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/faj17/gta6-trophy-guide-01b/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+
 An offline guide and tracker for all **55 PlayStation 5 trophies** of Grand Theft Auto VI
 (1 platinum, 2 gold, 6 silver, 46 bronze). Built for the make.fun competition
 `gta6-trophy-guide-01`.
