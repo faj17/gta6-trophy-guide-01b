@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VICE TRACKER — GTA VI Trophy Guide &amp; Platinum Roadmap</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-text">
+    <p class="kicker">LEONIDA &middot; PLAYSTATION 5 &middot; 55 TROPHIES</p>
+    <h1>VICE TRACKER</h1>
+    <p class="subtitle">The GTA VI trophy guide &amp; platinum roadmap. Every official name, description and grade, a guide in our own words with its sources, and a checklist that saves in your browser. No online trophies — the whole set is earnable solo.</p>
+  </div>
+  <div class="progress-card" id="progressCard">
+    <div class="progress-number"><span id="earnedCount">0</span><span class="of">/ 55</span></div>
+    <div class="progress-bar" role="progressbar" aria-label="Trophies earned" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progressBarWrap"><div class="progress-fill" id="progressFill"></div></div>
+    <p id="progressText">0 of 55 earned — 0% to the platinum</p>
+    <ul class="grade-counts" id="gradeCounts"></ul>
+  </div>
+</header>
+
+<main>
+  <section class="controls" aria-label="Filters and settings">
+    <label class="field search-field">Search <input id="search" type="search" placeholder="Search name, mission or keyword…" autocomplete="off"></label>
+    <label class="field">Grade
+      <select id="gradeFilter">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="field">Kind
+      <select id="kindFilter">
+        <option value="all">All kinds</option>
+        <option value="story">Story</option>
+        <option value="missable">Missable</option>
+        <option value="collectibles">Collectibles</option>
+        <option value="activities">Activities</option>
+        <option value="online">Online (none)</option>
+      </select>
+    </label>
+    <label class="field toggle-field"><input id="spoilerToggle" type="checkbox"> <span>Hide story spoilers until earned</span></label>
+    <label class="field toggle-field"><input id="hideEarned" type="checkbox"> <span>Hide earned</span></label>
+    <div class="field buttons">
+      <button id="exportBtn" type="button">Export progress</button>
+      <label class="import-label">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+      <button id="resetBtn" type="button">Reset</button>
+    </div>
+    <p class="controls-note" id="resultCount"></p>
+  </section>
+
+  <section aria-label="Trophy checklist">
+    <h2 id="listHeading">Checklist — all 55 trophies</h2>
+    <p class="list-note">Tick a trophy when you earn it — it stays ticked in this browser (localStorage). Click any trophy card to open its full guide and sources.</p>
+    <div class="trophy-grid" id="trophyGrid"></div>
+    <p class="empty" id="emptyState" hidden>No trophies match these filters. Try clearing the search or choosing “All kinds”.</p>
+  </section>
+
+  <section class="roadmap" id="roadmap" aria-label="Roadmap to the platinum">
+    <h2>Roadmap to the platinum</h2>
+    <p class="roadmap-intro">Built from the official descriptions, in the order to play it. Story first, then strangers, then the long grinds — and the gold “A Long Road” (100% completion) last, just before the platinum.</p>
+    <ol class="roadmap-steps">
+      <li><strong>Stage 1 — The story, in order.</strong> Opening mission <em>Gone Fishing</em>, then Chapter 1, Chapter 2, Chapter 3, Chapter 4, and the final mission. Named missions along the way: Breakfast Run, The Cartel Heist, Child’s Play, Headliners, VCIA Takedown, Operation Savage Glory. <span class="roadmap-trophies">13 trophies, incl. the gold for the finale.</span></li>
+      <li><strong>Stage 2 — Choices and partner moments, before the finale.</strong> Make story choices as they come (Actions Speak Louder), grab the partner trophies while your partner is with you (Hot Together, Retail Therapy, Personal Best), and if you fail a mission, retry it at once (Bad Luck, I Guess). Keep a save from before the final mission. <span class="roadmap-trophies">5 trophies — all flagged ⚑ MISSABLE.</span></li>
+      <li><strong>Stage 3 — Stranger strands.</strong> Finish the five named strands — Andy, Kenton, Billy, Randy, Tyrone — plus three more, for 8 strands total across Leonida. <span class="roadmap-trophies">6 trophies, incl. the silver Strangers &amp; Freaks.</span></li>
+      <li><strong>Stage 4 — Activities.</strong> Try all 9 activity types once; win 20 different races; win a Top Fun drone race at all 14 locations; gold all 42 Shooting Range challenges; beat Cal at fishing; finish an arcade game; bowl at Kolt &amp; Associates. <span class="roadmap-trophies">7 trophies, incl. the silver The Shootist.</span></li>
+      <li><strong>Stage 5 — Exploration &amp; collectibles.</strong> Visit all 52 areas; meditate at all 18 spots; WAiNK It at 100 locations; complete 3 card sets; discover 100 vehicles; buy all 8 garages; register 10 vehicles to Scooter Bros. <span class="roadmap-trophies">7 trophies, incl. the silver You WAiNKer!</span></li>
+      <li><strong>Stage 6 — Crime &amp; money.</strong> Rob 5 bank vaults and escape; rob an armored truck; rob one illegal operation of each of the 9 gangs; rob a jewelry store undetected; launder $250,000 of Marked Bills; spend $100,000 in shops. <span class="roadmap-trophies">6 trophies, incl. the silver Maximum Withdrawal.</span></li>
+      <li><strong>Stage 7 — Combat &amp; stunts.</strong> 250 stunts; 5 enemies in one Combat Focus; an unscheduled departure at VCIA; the Rhino; a melee drive-by; a strange encounter; 50 challenges. <span class="roadmap-trophies">7 trophies, incl. the silver Cunning Stunts.</span></li>
+      <li><strong>Stage 8 — The finish.</strong> Reach 100% completion for the gold A Long Road, and the platinum Vice Got a Price! pops with it. <span class="roadmap-trophies">2 trophies.</span></li>
+    </ol>
+    <p class="roadmap-note">⚑ <strong>MISSABLE</strong> means the trophy is tied to a story chapter, a named mission, a story choice or a partner moment that may not come back — do it when the game offers it, and keep a manual save before big story beats. Count trophies (250 stunts, 100 WAiNK, 100 vehicles…) are grinds, not missables: they keep counting in free roam. <strong>Online:</strong> none of the 55 trophies is online — filter “Online” shows an empty list on purpose.</p>
+  </section>
+</main>
+
+<div class="detail-backdrop" id="detailBackdrop" hidden>
+  <article class="detail" role="dialog" aria-modal="true" aria-labelledby="detailName" id="detailPanel">
+    <button class="detail-close" id="detailClose" type="button" aria-label="Close guide">×</button>
+    <p class="detail-grade" id="detailGrade"></p>
+    <h3 id="detailName"></h3>
+    <p class="detail-desc" id="detailDesc"></p>
+    <p class="detail-flags" id="detailFlags"></p>
+    <h4>Guide</h4>
+    <p class="detail-guide" id="detailGuide"></p>
+    <h4>Sources</h4>
+    <ul class="detail-sources" id="detailSources"></ul>
+    <label class="detail-earned"><input id="detailEarned" type="checkbox"> <span>Earned — tick it off</span></label>
+  </article>
+</div>
+
+<footer>
+  <p>VICE TRACKER — an unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive; this guide uses no Rockstar logo, artwork or game screenshots. Official trophy names, descriptions and grades are shown as PlayStation publishes them. Guides are written in our own words and cite PSNProfiles and Exophase per trophy. The game had not released when this guide was written: steps follow the official descriptions and the trophy lists, and unconfirmed details are flagged in the guide — check the linked source. Works fully offline; nothing is fetched at run time except the local data file.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
